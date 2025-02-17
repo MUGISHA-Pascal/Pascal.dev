@@ -17,6 +17,7 @@ const projects = [
       "A documented REST API backend for lesson tracking functionality (tested using Jest).",
     image: "/lessonTracker.png",
     link: "https://lessontrack-api.onrender.com/docs/",
+    githubLink: "https://github.com/MUGISHA-Pascal/LessonTrack-API",
     tags: ["Node.js", "Express", "Jest"],
     category: "Backend",
   },
@@ -26,6 +27,7 @@ const projects = [
       "A documented REST API backend for lesson tracking functionality (tested using Jest).",
     image: "/umuravaback.png",
     link: "https://skills-challenge.onrender.com/api",
+    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
     tags: ["Node.js", "NestJs"],
     category: "Backend",
   },
@@ -34,6 +36,7 @@ const projects = [
     description: "A web-based app to support agriculture.",
     image: "/Farm.png",
     link: "https://farm2-global-frontend.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/Farm2Global",
     tags: ["React", "Next.js", "Agriculture"],
     category: "Frontend",
   },
@@ -42,15 +45,16 @@ const projects = [
     description: "A web-based app to support challenge taking.",
     image: "/umuravaFront.png",
     link: "https://tal-manage.netlify.app/",
-    tags: ["React", "Next.js", "challenge "],
+    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-Frontend",
+    tags: ["React", "Next.js", "challenge"],
     category: "Frontend",
   },
-
   {
     title: "TaskTrack",
     description: "A web-based app to keep track of tasks.",
     image: "/TaskTrack.png",
     link: "https://task-track-peach.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/TaskTrack",
     tags: ["React", "Task Management"],
     category: "Frontend",
   },
@@ -67,6 +71,7 @@ const projects = [
     description: "A web-based application to control users.",
     image: "/UserHub.png",
     link: "https://userhub-one.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/UserHub",
     tags: ["React", "User Management"],
     category: "Frontend",
   },
@@ -76,6 +81,7 @@ const projects = [
       "A web-based application that deals with insurance claim functionalities.",
     image: "/AgriGrowth.png",
     link: "https://agri-growth.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
     tags: ["React", "Insurance", "Agriculture"],
     category: "Frontend",
   },
@@ -84,6 +90,7 @@ const projects = [
     description: "A web-based application for lesson tracking functionality.",
     image: "/Lesson.png",
     link: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
+    githubLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
     tags: ["React", "Education"],
     category: "Frontend",
   },
@@ -93,6 +100,7 @@ const projects = [
       "A web-based task management system with Google authentication.",
     image: "/TaskFlow.png",
     link: "https://task-flow-chi.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/TaskFlow",
     tags: ["React", "Task Management", "Google Auth"],
     category: "Frontend",
   },
@@ -101,6 +109,7 @@ const projects = [
     description: "A web-based chat app.",
     image: "/Connectify.png",
     link: "https://connectify-sand.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/Connectify",
     tags: ["React", "Chat App"],
     category: "Frontend",
   },
@@ -110,6 +119,7 @@ const projects = [
       "A web-based application that ensures a two-way video chat between two computers.",
     image: "/FaceConnect.png",
     link: "https://face-connect.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/FaceConnect",
     tags: ["React", "WebRTC", "Video Chat"],
     category: "Frontend",
   },
@@ -118,6 +128,7 @@ const projects = [
     description: "A web-based library management application.",
     image: "/Librax.png",
     link: "https://github.com/MUGISHA-Pascal/Librax",
+    githubLink: "https://github.com/MUGISHA-Pascal/Librax",
     tags: ["PHP", "Library Management"],
     category: "Backend",
   },
@@ -126,25 +137,8 @@ const projects = [
     description: "A web-based blogging platform.",
     image: "/BlogNest.png",
     link: "https://blog-nest-rose.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/BlogNest",
     tags: ["React", "Next.js", "Blogging"],
-    category: "Frontend",
-  },
-  {
-    title: "ChatterBox",
-    description:
-      "A web-based program to connect people through exchanging text messages.",
-    image: "/ChatterBox.png",
-    link: "https://github.com/MUGISHA-Pascal/ChatterBox",
-    tags: ["React", "Messaging"],
-    category: "Frontend",
-  },
-  {
-    title: "ClaimStream",
-    description:
-      "A web-based application that deals with insurance claim functionalities.",
-    image: "/ClaimStream.png",
-    link: "https://claimstream.vercel.app/",
-    tags: ["React", "Insurance"],
     category: "Frontend",
   },
   {
@@ -152,16 +146,9 @@ const projects = [
     description: "A collection of machine learning-based projects.",
     image: "/ML.png",
     link: "https://github.com/MUGISHA-Pascal/machine-learning",
+    githubLink: "https://github.com/MUGISHA-Pascal/machine-learning",
     tags: ["Python", "Machine Learning", "AI"],
     category: "Machine Learning",
-  },
-  {
-    title: "Finance Logger",
-    description: "A simple web-based finance logger frontend.",
-    image: "/FinanceLogger.png",
-    link: "https://finance-logger-theta.vercel.app/",
-    tags: ["React", "Finance"],
-    category: "Frontend",
   },
   {
     title: "Credit Scoring Model",
@@ -169,16 +156,8 @@ const projects = [
       "A credit scoring model to predict the creditworthiness of individuals based on historical financial data.",
     image: "/creditModel.png",
     link: "https://github.com/MUGISHA-Pascal/credit-scoring-model",
+    githubLink: "https://github.com/MUGISHA-Pascal/credit-scoring-model",
     tags: ["Python", "AI", "Finance"],
-    category: "Machine Learning",
-  },
-  {
-    title: "Image Manipulation Tool",
-    description:
-      "A simple computer vision-based desktop app for processing an image.",
-    image: "/ImageTool.png",
-    link: "https://github.com/MUGISHA-Pascal/image-manipulation-tool",
-    tags: ["Python", "Computer Vision"],
     category: "Machine Learning",
   },
 ];
@@ -244,9 +223,9 @@ export default function Page() {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="min-h-screen bg-background ">
+    <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container px-[7px] flex h-14 items-center justify-between">
+        <div className="container flex h-14 items-center justify-between">
           <div className="flex items-center">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <span className="hidden font-bold sm:inline-block">
@@ -322,7 +301,7 @@ export default function Page() {
                   <AnimatedButton
                     variant="outline"
                     size="icon"
-                    href="https://github.com/MUGISHA-Pascal"
+                    href="https://github.com"
                     target="_blank"
                   >
                     <Github className="h-4 w-4" />
@@ -331,7 +310,7 @@ export default function Page() {
                   <AnimatedButton
                     variant="outline"
                     size="icon"
-                    href="https://www.linkedin.com/in/mugisha-pascal"
+                    href="https://linkedin.com"
                     target="_blank"
                   >
                     <Linkedin className="h-4 w-4" />
@@ -340,7 +319,7 @@ export default function Page() {
                   <AnimatedButton
                     variant="outline"
                     size="icon"
-                    href="https://x.com/m_pascal_69"
+                    href="https://twitter.com"
                     target="_blank"
                   >
                     <Twitter className="h-4 w-4" />
@@ -349,7 +328,7 @@ export default function Page() {
                   <AnimatedButton
                     variant="outline"
                     size="icon"
-                    href="mailto:mugishapascal2008@gmail.com"
+                    href="mailto:hello@example.com"
                   >
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
@@ -402,6 +381,7 @@ export default function Page() {
                     description={project.description}
                     image={project.image}
                     link={project.link}
+                    githubLink={project.githubLink}
                     tags={project.tags}
                     category={project.category}
                   />

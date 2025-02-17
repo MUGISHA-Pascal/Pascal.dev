@@ -1,14 +1,15 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { AnimatedButton } from "@/components/animated-button";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
   link: string;
+  githubLink?: string;
   tags: string[];
   category: string;
 }
@@ -18,6 +19,7 @@ export default function ProjectCard({
   description,
   image,
   link,
+  githubLink,
   tags,
   category,
 }: ProjectCardProps) {
@@ -36,7 +38,6 @@ export default function ProjectCard({
             alt={title}
             fill
             className="object-cover transition-transform hover:scale-105"
-            //object-cover  , object-fit
           />
         </div>
         <CardContent className="p-4">
@@ -53,15 +54,27 @@ export default function ProjectCard({
             ))}
           </div>
         </CardContent>
-        <CardFooter className="p-4 pt-0">
-          <Link
+        <CardFooter className="p-4 pt-0 flex justify-between">
+          <AnimatedButton
+            variant="outline"
+            size="sm"
             href={link}
             target="_blank"
-            className="inline-flex items-center gap-2 text-sm hover:underline"
           >
-            <Github className="h-4 w-4" />
-            View on GitHub
-          </Link>
+            <ExternalLink className="h-4 w-4 mr-2" />
+            View
+          </AnimatedButton>
+          {githubLink && (
+            <AnimatedButton
+              variant="outline"
+              size="sm"
+              href={githubLink}
+              target="_blank"
+            >
+              <Github className="h-4 w-4 mr-2" />
+              View on GitHub
+            </AnimatedButton>
+          )}
         </CardFooter>
       </Card>
     </motion.div>
