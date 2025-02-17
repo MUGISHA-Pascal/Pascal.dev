@@ -8,6 +8,7 @@ import TechStack from "./components/tech-stack"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 import { AnimatedButton } from "@/components/animated-button"
+import { useScrollToSection } from "@/hooks/useScrollToSection"
 
 const projects = [
   {
@@ -118,6 +119,8 @@ export default function Page() {
   const [activeCategory, setActiveCategory] = useState("All")
   const [currentPage, setCurrentPage] = useState(1)
   const projectsPerPage = 6
+
+  useScrollToSection()
 
   const filteredProjects =
     activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
