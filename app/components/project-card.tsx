@@ -1,19 +1,26 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Github } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Github } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  image: string
-  link: string
-  tags: string[]
-  category: string
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  tags: string[];
+  category: string;
 }
 
-export default function ProjectCard({ title, description, image, link, tags, category }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  description,
+  image,
+  link,
+  tags,
+  category,
+}: ProjectCardProps) {
   return (
     <motion.div
       layout
@@ -29,6 +36,7 @@ export default function ProjectCard({ title, description, image, link, tags, cat
             alt={title}
             fill
             className="object-cover transition-transform hover:scale-105"
+            //object-cover  , object-fit
           />
         </div>
         <CardContent className="p-4">
@@ -46,13 +54,16 @@ export default function ProjectCard({ title, description, image, link, tags, cat
           </div>
         </CardContent>
         <CardFooter className="p-4 pt-0">
-          <Link href={link} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
+          <Link
+            href={link}
+            target="_blank"
+            className="inline-flex items-center gap-2 text-sm hover:underline"
+          >
             <Github className="h-4 w-4" />
             View on GitHub
           </Link>
         </CardFooter>
       </Card>
     </motion.div>
-  )
+  );
 }
-
