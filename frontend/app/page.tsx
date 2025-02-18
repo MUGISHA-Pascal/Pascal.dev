@@ -6,7 +6,7 @@ import ContactForm from "./components/contact-form";
 import ProjectCard from "./components/project-card";
 import TechStack from "./components/tech-stack";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { AnimatedButton } from "@/components/animated-button";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { ThemeToggle } from "@/components/theme-toggle";
