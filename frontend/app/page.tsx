@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Farm2Global",
     description: "A web-based app to support agriculture.",
-    image: "/Farm.png",
+    image: "/farm.png",
     link: "https://farm2-global-frontend.vercel.app/",
     githubLink: "https://github.com/MUGISHA-Pascal/Farm2Global",
     tags: ["React", "Next.js", "Agriculture"],
@@ -44,7 +44,7 @@ const projects = [
     title: "Umurava-Challenge-API",
     description:
       "A documented REST API backend for lesson tracking functionality (tested using Jest).",
-    image: "/umuravaback.png",
+    image: "/umuravaBack.png",
     link: "https://skills-challenge.onrender.com/api",
     githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
     tags: ["Node.js", "NestJs"],
@@ -71,7 +71,7 @@ const projects = [
   },
 
   {
-    title: "AgriGrowth",
+    title: "agrigrowth",
     description:
       "A web-based application that deals with insurance claim functionalities.",
     image: "/AgriGrowth.png",
@@ -83,7 +83,7 @@ const projects = [
   {
     title: "LessonTracker",
     description: "A web-based application for lesson tracking functionality.",
-    image: "/Lesson.png",
+    image: "/lesson.png",
     link: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
     githubLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
     tags: ["React", "Education"],
