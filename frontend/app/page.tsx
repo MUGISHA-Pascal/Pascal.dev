@@ -74,7 +74,7 @@ const projects = [
     title: "agrigrowth",
     description:
       "A web-based application that deals with insurance claim functionalities.",
-    image: "/AgriGrowth.png",
+    image: "/agrigrowth.png",
     link: "https://agri-growth.vercel.app/",
     githubLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
     tags: ["React", "Insurance", "Agriculture"],
