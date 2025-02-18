@@ -9,8 +9,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { AnimatedButton } from "@/components/animated-button";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const projects = [
+  {
+    title: "Farm2Global",
+    description: "A web-based app to support agriculture.",
+    image: "/Farm.png",
+    link: "https://farm2-global-frontend.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/Farm2Global",
+    tags: ["React", "Next.js", "Agriculture"],
+    category: "Frontend",
+  },
+  {
+    title: "TaskTrack",
+    description: "A web-based app to keep track of tasks.",
+    image: "/TaskTrack.png",
+    link: "https://task-track-peach.vercel.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/TaskTrack",
+    tags: ["React", "Task Management"],
+    category: "Frontend",
+  },
   {
     title: "LessonTrack-API",
     description:
@@ -31,15 +50,7 @@ const projects = [
     tags: ["Node.js", "NestJs"],
     category: "Backend",
   },
-  {
-    title: "Farm2Global",
-    description: "A web-based app to support agriculture.",
-    image: "/Farm.png",
-    link: "https://farm2-global-frontend.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/Farm2Global",
-    tags: ["React", "Next.js", "Agriculture"],
-    category: "Frontend",
-  },
+
   {
     title: "Umurava-Challenge-Frontend",
     description: "A web-based app to support challenge taking.",
@@ -49,32 +60,16 @@ const projects = [
     tags: ["React", "Next.js", "challenge"],
     category: "Frontend",
   },
-  {
-    title: "TaskTrack",
-    description: "A web-based app to keep track of tasks.",
-    image: "/TaskTrack.png",
-    link: "https://task-track-peach.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/TaskTrack",
-    tags: ["React", "Task Management"],
-    category: "Frontend",
-  },
+
   {
     title: "AutoPart Design",
     description: "Design for autopart design",
-    image: "/autopart.png",
+    image: "autopart.png",
     link: "https://www.figma.com/design/1g2TDIpywUQMzYzvqLLUQ5/my-auto-part-design?t=XMYAZPONVNEFyuie-0",
     tags: ["figma", "Design"],
     category: "Design",
   },
-  {
-    title: "UserHub",
-    description: "A web-based application to control users.",
-    image: "/UserHub.png",
-    link: "https://userhub-one.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/UserHub",
-    tags: ["React", "User Management"],
-    category: "Frontend",
-  },
+
   {
     title: "AgriGrowth",
     description:
@@ -95,53 +90,6 @@ const projects = [
     category: "Frontend",
   },
   {
-    title: "TaskFlow",
-    description:
-      "A web-based task management system with Google authentication.",
-    image: "/TaskFlow.png",
-    link: "https://task-flow-chi.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/TaskFlow",
-    tags: ["React", "Task Management", "Google Auth"],
-    category: "Frontend",
-  },
-  {
-    title: "Connectify",
-    description: "A web-based chat app.",
-    image: "/Connectify.png",
-    link: "https://connectify-sand.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/Connectify",
-    tags: ["React", "Chat App"],
-    category: "Frontend",
-  },
-  {
-    title: "FaceConnect",
-    description:
-      "A web-based application that ensures a two-way video chat between two computers.",
-    image: "/FaceConnect.png",
-    link: "https://face-connect.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/FaceConnect",
-    tags: ["React", "WebRTC", "Video Chat"],
-    category: "Frontend",
-  },
-  {
-    title: "Librax",
-    description: "A web-based library management application.",
-    image: "/Librax.png",
-    link: "https://github.com/MUGISHA-Pascal/Librax",
-    githubLink: "https://github.com/MUGISHA-Pascal/Librax",
-    tags: ["PHP", "Library Management"],
-    category: "Backend",
-  },
-  {
-    title: "BlogNest",
-    description: "A web-based blogging platform.",
-    image: "/BlogNest.png",
-    link: "https://blog-nest-rose.vercel.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/BlogNest",
-    tags: ["React", "Next.js", "Blogging"],
-    category: "Frontend",
-  },
-  {
     title: "Machine Learning Projects",
     description: "A collection of machine learning-based projects.",
     image: "/ML.png",
@@ -150,54 +98,38 @@ const projects = [
     tags: ["Python", "Machine Learning", "AI"],
     category: "Machine Learning",
   },
-  {
-    title: "Credit Scoring Model",
-    description:
-      "A credit scoring model to predict the creditworthiness of individuals based on historical financial data.",
-    image: "/creditModel.png",
-    link: "https://github.com/MUGISHA-Pascal/credit-scoring-model",
-    githubLink: "https://github.com/MUGISHA-Pascal/credit-scoring-model",
-    tags: ["Python", "AI", "Finance"],
-    category: "Machine Learning",
-  },
 ];
 
 const educationData = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    year: "2020 - 2022",
-    description: "Specialized in Artificial Intelligence and Machine Learning",
+    degree: "Software Development and Embedded Systems",
+    institution: "Rwanda Coding Academy",
+    year: "2023 - 2026",
+    description:
+      "Specialized in Software Engineering , Artificial Intelligence and Machine Learning",
   },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "Massachusetts Institute of Technology",
-    year: "2016 - 2020",
-    description: "Minor in Data Science",
+    degree: "Ordinary-Level High School Degree",
+    institution: "Kagarama Secondary School",
+    year: "2019 - 2023",
+    description: "Minor in Science",
   },
 ];
 
 const experienceData = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Innovators Inc.",
-    year: "2022 - Present",
+    title: "Full Stack Developer",
+    company: "Elevantaa",
+    year: "2024 - Present",
     description:
-      "Lead developer for cloud-based enterprise solutions, focusing on scalability and performance optimization.",
+      "Lead developer for software solutions, focusing on scalability and performance optimization.",
   },
   {
     title: "Full Stack Developer",
-    company: "StartUp Ventures",
-    year: "2020 - 2022",
+    company: "Farm2Global",
+    year: "2024",
     description:
       "Developed and maintained multiple web applications using React, Node.js, and PostgreSQL.",
-  },
-  {
-    title: "Software Engineering Intern",
-    company: "Big Tech Co.",
-    year: "Summer 2019",
-    description:
-      "Contributed to the development of internal tools and assisted in the redesign of the company's main product.",
   },
 ];
 
@@ -223,9 +155,9 @@ export default function Page() {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center justify-between">
+        <div className="container flex px-[7px] h-14 items-center justify-between">
           <div className="flex items-center">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <span className="hidden font-bold sm:inline-block">
@@ -265,7 +197,12 @@ export default function Page() {
               </Link>
             </nav>
           </div>
-          <AnimatedButton variant="outline">Resume</AnimatedButton>
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <AnimatedButton variant="outline">Resume</AnimatedButton>
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -293,46 +230,47 @@ export default function Page() {
                   Pascal
                 </h1>
                 <p className="text-xl font-semibold">Full Stack Developer</p>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                   Building digital experiences with modern technologies. Focused
                   on creating elegant solutions to complex problems.
                 </p>
                 <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                  <AnimatedButton
-                    variant="outline"
-                    size="icon"
-                    href="https://github.com"
+                  <Link
+                    href="https://github.com/MUGISHA-Pascal"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Github className="h-4 w-4" />
-                    <span className="sr-only">GitHub</span>
-                  </AnimatedButton>
-                  <AnimatedButton
-                    variant="outline"
-                    size="icon"
-                    href="https://linkedin.com"
+                    <AnimatedButton variant="outline" size="icon">
+                      <Github className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </AnimatedButton>
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/mugisha-pascal"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </AnimatedButton>
-                  <AnimatedButton
-                    variant="outline"
-                    size="icon"
-                    href="https://twitter.com"
+                    <AnimatedButton variant="outline" size="icon">
+                      <Linkedin className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </AnimatedButton>
+                  </Link>
+                  <Link
+                    href="https://x.com/m_pascal_69"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </AnimatedButton>
-                  <AnimatedButton
-                    variant="outline"
-                    size="icon"
-                    href="mailto:hello@example.com"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </AnimatedButton>
+                    <AnimatedButton variant="outline" size="icon">
+                      <Twitter className="h-4 w-4" />
+                      <span className="sr-only">Twitter</span>
+                    </AnimatedButton>
+                  </Link>
+                  <Link href="mailto:mugishapascal2008@gmail.com">
+                    <AnimatedButton variant="outline" size="icon">
+                      <Mail className="h-4 w-4" />
+                      <span className="sr-only">Email</span>
+                    </AnimatedButton>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -513,8 +451,8 @@ export default function Page() {
         transition={{ delay: 0.5, duration: 0.5 }}
       >
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            © 2024 John Doe. All rights reserved.
+          <p className="text-xs text-muted-foreground">
+            © 2025 MUGISHA Pascal. All rights reserved.
           </p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
             <Link
