@@ -71,6 +71,17 @@ const projects = [
     category: "Frontend",
   },
   {
+    title: "NestJs-MicroServices (E-commerce)",
+    description:
+      "A documented Micoservices backend with features of an E-commerce",
+    image: "/nestJsMicroservice.png",
+    link: "https://nestjs-backend-microservices.onrender.com/api",
+    githubLink:
+      "https://github.com/MUGISHA-Pascal/NestJs-Backend-MicroServices",
+    tags: ["Microservices", "E-commerce", "NestJs"],
+    category: "Backend",
+  },
+  {
     title: "AutoPart Design",
     description: "Design for autopart design",
     image: "autopart.png",
