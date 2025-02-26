@@ -41,33 +41,14 @@ const projects = [
     category: "Backend",
   },
   {
-    title: "Umurava-Challenge-API",
+    title: "NestJs-Backend-Starter",
     description:
-      "A documented REST API backend for lesson tracking functionality (tested using Jest).",
-    image: "/umuravaBack.png",
-    link: "https://skills-challenge.onrender.com/api",
-    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
-    tags: ["Node.js", "NestJs"],
+      "A documented Nest js backend starter with various functionalities for starting your new project",
+    image: "/nestjsStarter.png",
+    link: "https://nestjs-backend-starter.onrender.com/api",
+    githubLink: "https://github.com/MUGISHA-Pascal/NestJs-Backend-Starter",
+    tags: ["Node.js", "NestJs", "Graphql", "RestFulAPI"],
     category: "Backend",
-  },
-
-  {
-    title: "Umurava-Challenge-Frontend",
-    description: "A web-based app to support challenge taking.",
-    image: "/umuravaFront.png",
-    link: "https://tal-manage.netlify.app/",
-    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-Frontend",
-    tags: ["React", "Next.js", "challenge"],
-    category: "Frontend",
-  },
-
-  {
-    title: "AutoPart Design",
-    description: "Design for autopart design",
-    image: "autopart.png",
-    link: "https://www.figma.com/design/1g2TDIpywUQMzYzvqLLUQ5/my-auto-part-design?t=XMYAZPONVNEFyuie-0",
-    tags: ["figma", "Design"],
-    category: "Design",
   },
 
   {
@@ -88,6 +69,35 @@ const projects = [
     githubLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
     tags: ["React", "Education"],
     category: "Frontend",
+  },
+  {
+    title: "AutoPart Design",
+    description: "Design for autopart design",
+    image: "autopart.png",
+    link: "https://www.figma.com/design/1g2TDIpywUQMzYzvqLLUQ5/my-auto-part-design?t=XMYAZPONVNEFyuie-0",
+    tags: ["figma", "Design"],
+    category: "Design",
+  },
+
+  {
+    title: "Umurava-Challenge-Frontend",
+    description: "A web-based app to support challenge taking.",
+    image: "/umuravaFront.png",
+    link: "https://tal-manage.netlify.app/",
+    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-Frontend",
+    tags: ["React", "Next.js", "challenge"],
+    category: "Frontend",
+  },
+
+  {
+    title: "Umurava-Challenge-API",
+    description:
+      "A documented REST API backend for lesson tracking functionality (tested using Jest).",
+    image: "/umuravaBack.png",
+    link: "https://skills-challenge.onrender.com/api",
+    githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
+    tags: ["Node.js", "NestJs"],
+    category: "Backend",
   },
   {
     title: "Machine Learning Projects",
