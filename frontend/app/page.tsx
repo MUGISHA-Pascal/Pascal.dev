@@ -65,7 +65,7 @@ const projects = [
     title: "LessonTracker",
     description: "A web-based application for lesson tracking functionality.",
     image: "/lesson.png",
-    link: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
+    link: "https://lesson-tracking-frontend.vercel.app/",
     githubLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
     tags: ["React", "Education"],
     category: "Frontend",
@@ -109,6 +109,16 @@ const projects = [
     githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
     tags: ["Node.js", "NestJs"],
     category: "Backend",
+  },
+  {
+    title: "LessonTrack-Mobile",
+    description:
+      "A mobile based application created with lesson tracking functionality .",
+    image: "/lessonMobile.png",
+    link: "https://github.com/MUGISHA-Pascal/machine-learning",
+    githubLink: "https://github.com/MUGISHA-Pascal/machine-learning",
+    tags: ["React Native", "Mobile", "Lesson Track"],
+    category: "Mobile",
   },
   {
     title: "Machine Learning Projects",
