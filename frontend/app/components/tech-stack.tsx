@@ -1,14 +1,30 @@
-import { Card } from "@/components/ui/card"
-import { motion } from "framer-motion"
+import { Card } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const technologies = [
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"],
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Redux",
+      "GraphQL",
+    ],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    skills: [
+      "Node.js",
+      "NestJs",
+      "Spring-Boot",
+      "Express",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MongoDB",
+    ],
   },
   {
     category: "DevOps",
@@ -18,7 +34,11 @@ const technologies = [
     category: "Tools",
     skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"],
   },
-]
+  {
+    category: "Machine Learning",
+    skills: ["TensolFlow", "Pytorch", "Computer Vision", "MediaPipe"],
+  },
+];
 
 export default function TechStack() {
   return (
@@ -47,6 +67,5 @@ export default function TechStack() {
         </motion.div>
       ))}
     </div>
-  )
+  );
 }
-

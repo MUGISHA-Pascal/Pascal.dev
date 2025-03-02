@@ -30,16 +30,7 @@ const projects = [
     tags: ["React", "Task Management"],
     category: "Frontend",
   },
-  {
-    title: "LessonTrack-API",
-    description:
-      "A documented REST API backend for lesson tracking functionality (tested using Jest).",
-    image: "/lessonTracker.png",
-    link: "https://lessontrack-api.onrender.com/docs/",
-    githubLink: "https://github.com/MUGISHA-Pascal/LessonTrack-API",
-    tags: ["Node.js", "Express", "Jest"],
-    category: "Backend",
-  },
+
   {
     title: "NestJs-Backend-Starter",
     description:
@@ -52,7 +43,7 @@ const projects = [
   },
 
   {
-    title: "agrigrowth",
+    title: "Agrigrowth",
     description:
       "A web-based application that deals with insurance claim functionalities.",
     image: "/agrigrowth.png",
@@ -99,7 +90,16 @@ const projects = [
     tags: ["React", "Next.js", "challenge"],
     category: "Frontend",
   },
-
+  {
+    title: "Agriculture-Support-Backend",
+    description:
+      "A documented rest API backend for agriculture support functionality with multiple features",
+    image: "/AgriBackend.png",
+    link: "https://agriculture-support-backend.onrender.com/docs/",
+    githubLink: "https://github.com/MUGISHA-Pascal/Agriculture-Support-Backend",
+    tags: ["Node.js", "Express"],
+    category: "Backend",
+  },
   {
     title: "Umurava-Challenge-API",
     description:
@@ -108,6 +108,17 @@ const projects = [
     link: "https://skills-challenge.onrender.com/api",
     githubLink: "https://github.com/MUGISHA-Pascal/Umurava-Challenge-API",
     tags: ["Node.js", "NestJs"],
+    category: "Backend",
+  },
+
+  {
+    title: "LessonTrack-API",
+    description:
+      "A documented REST API backend for lesson tracking functionality (tested using Jest).",
+    image: "/lessonTracker.png",
+    link: "https://lessontrack-api.onrender.com/docs/",
+    githubLink: "https://github.com/MUGISHA-Pascal/LessonTrack-API",
+    tags: ["Node.js", "Express", "Jest"],
     category: "Backend",
   },
   {
