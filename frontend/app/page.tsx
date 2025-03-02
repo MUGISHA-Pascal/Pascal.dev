@@ -25,7 +25,7 @@ const projects = [
     title: "TaskTrack",
     description: "A web-based app to keep track of tasks.",
     image: "/TaskTrack.png",
-    link: "https://task-track-peach.vercel.app/",
+    link: "https://task-track-phi.vercel.app/",
     githubLink: "https://github.com/MUGISHA-Pascal/TaskTrack",
     tags: ["React", "Task Management"],
     category: "Frontend",

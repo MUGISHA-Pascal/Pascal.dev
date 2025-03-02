@@ -16,11 +16,9 @@ const technologies = [
   {
     category: "Backend",
     skills: [
-      "Node.js",
       "NestJs",
       "Spring-Boot",
       "Express",
-      "Python",
       "Django",
       "PostgreSQL",
       "MongoDB",
